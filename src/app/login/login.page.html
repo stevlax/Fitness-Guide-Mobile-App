@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Built Different Gym</h1>
+      <p>Log In or Sign Up</p>
+    </div>
+    <div class="login-form ion-padding">
+      <div class="form input">
+        <ion-item>
+          <ion-label position="floating" color="medium">Enter username or email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form input">
+        <ion-item>
+          <ion-label position="floating" color="medium">Enter password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-button fill="clear" size="small" class="forgot-password" routerLink="/password">Forgot Password?</ion-button>
+      </div>
+    </div>
+    <div class="action-buttons ion-padding">
+      <ion-button shape="round" size="large" class="login-button" [disabled]="!email || !password" routerLink="/home">Log In</ion-button>
+      <p>Don't have an account? Sign up now!</p>
+      <ion-button shape="round" size="large" class="signup-button" fill="outline" routerLink="/signup">Sign Up</ion-button>
+    </div>
+  </div>
+</ion-content>

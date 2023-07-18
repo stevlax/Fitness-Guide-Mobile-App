@@ -1,0 +1,349 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan">
+          <ion-icon name="barbell-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item  routerLink="/nutrition"class="home-active">
+          <ion-icon name="nutrition-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Nutrition Guide</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-breadcrumbs>
+    <ion-breadcrumb routerLink="/nutrition">Choose workout</ion-breadcrumb>
+    <ion-breadcrumb routerLink="/bulking-diet">Bulking Diet</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <ion-content overflow-scroll="true">
+    <ion-card>
+      <img alt="leanproteins" src="assets/leanproteins.jpg" />
+      <ion-card-header>
+        <ion-card-title>Lean Proteins</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+      Lean proteins help lower blood cholesterol, support brain functioning and promote a higher metabolic rate. A maximized metabolism can help maintain a healthy body weight  
+      </ion-card-content>
+
+      <ion-item>
+        <ion-checkbox> Chicken </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Fish </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Turkey </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Beef </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Pork </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Greek Yogurt </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Cottage Cheese </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Tofu </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Egg and Egg Whites </ion-checkbox>
+      </ion-item>
+      <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+      </ion-card>
+
+      <ion-card>
+        <img alt="healthyfats" src="assets/healthyfats.jpeg" />
+        <ion-card-header>
+          <ion-card-title>Healthy Fats</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          A robust body of research has revealed the wide-ranging benefits of including healthy fats in the diet. These include lowering the risk of developing heart disease, improving blood cholesterol levels, helping with blood sugar control and reducing inflammation
+        </ion-card-content>
+        <ion-item>
+          <ion-checkbox> Olive Oil </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Avocado </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Nuts </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Nut Butters </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Fatty Fish </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Seeds (chia, hemp, flax) </ion-checkbox>
+        </ion-item>
+        <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+        </ion-card>
+
+        <ion-card>
+          <img alt="legumes" src="assets/legumes.jpg" />
+          <ion-card-header>
+            <ion-card-title>Legumes</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Legumes contain antioxidants that help prevent cell damage and fight disease and aging. The fiber and other nutrients benefit the digestive system and may even help prevent digestive cancers.  
+          </ion-card-content>
+          <ion-item>
+            <ion-checkbox> Chickpeas </ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox> Kidney peas </ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox> Navy peas </ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox> Black peas </ion-checkbox>
+          </ion-item>
+          <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+          </ion-card>
+
+          <ion-card>
+            <img alt="hqcarbs" src="assets/hqcarbs.jpg" />
+            <ion-card-header>
+              <ion-card-title>High Quality Carbs</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              High carbohydrate foods are excellent sources of quick, ready-to-use energy that your body can easily access when you need it most 
+            </ion-card-content>
+            <ion-item>
+              <ion-checkbox> Oats </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> Quinoa </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> Whole Grain Pasta </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> White/Sweet Potato </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> White/Brown Rice </ion-checkbox>
+            </ion-item>
+            <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+            </ion-card>
+
+            <ion-card>
+              <img alt="fruits" src="assets/fruits.jpg" />
+              <ion-card-header>
+                <ion-card-title>Fruits</ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+                Fruits are a good source of vitamins and minerals, recognized for their role in preventing vitamin C and vitamin A deficiencies  
+              </ion-card-content>
+              <ion-item>
+                <ion-checkbox> Apple </ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox> Orange </ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox> Banana </ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox> Pineapple </ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox> Grapefruit </ion-checkbox>
+              </ion-item>
+              <ion-item>
+                <ion-checkbox> Berries </ion-checkbox>
+              </ion-item>
+              <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+              </ion-card>
+
+              <ion-card>
+                <img alt="nonstarchveg" src="assets/nonstarchveg.jpg" />
+                <ion-card-header>
+                  <ion-card-title>Non-starchy Vegetables</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Despite their low calorie content, non-starchy vegetables are high in fiber and contain essential vitamins and minerals. In fact, they have small amounts of almost all the vitamins and minerals you need  
+                </ion-card-content>
+                <ion-item>
+                  <ion-checkbox> Peppers </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Asparagus </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Green Beans </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Mushrooms </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Onions </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Tomatoes </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Zucchini </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Carrots </ion-checkbox>
+                </ion-item>
+                <ion-item>
+                  <ion-checkbox> Celery </ion-checkbox>
+                </ion-item>
+                <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+                </ion-card>
+
+                <ion-card>
+                  <img alt="cruciferousveg" src="assets/cruciferousveg.jpg" />
+                  <ion-card-header>
+                    <ion-card-title>Cruciferous Vegetables</ion-card-title>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                    Rich in many vitamins and minerals, cruciferous vegetables are also a great source of omega-3s. These healthy fats are essential to many bodily functions — like helping to maintain good cognitive health, reducing the risk of mental decline, and conditions like Alzheimer's disease. 
+                  </ion-card-content>
+                  <ion-item>
+                    <ion-checkbox> Broccoli </ion-checkbox>
+                  </ion-item>
+                  <ion-item>
+                    <ion-checkbox> Cauliflower </ion-checkbox>
+                  </ion-item>
+                  <ion-item>
+                    <ion-checkbox> Brussel sprouts </ion-checkbox>
+                  </ion-item>
+                  <ion-item>
+                    <ion-checkbox> Cabbage </ion-checkbox>
+                  </ion-item>
+                  <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+                  </ion-card>
+
+                  <ion-card>
+                    <img alt="darkleafgreen" src="assets/piccolo.jpg" />
+                    <ion-card-header>
+                      <ion-card-title>Dark Leafy Greens</ion-card-title>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      Dark green leafy vegetables are an excellent source of fiber, folate, and carotenoids. These vegetables also contain vitamins C and K and the minerals iron and calcium. In addition, dark green leafy vegetables act as antioxidants in the body.  
+                    </ion-card-content>
+                    <ion-item>
+                      <ion-checkbox> Spinach </ion-checkbox>
+                    </ion-item>
+                    <ion-item>
+                      <ion-checkbox> Swish chard </ion-checkbox>
+                    </ion-item>
+                    <ion-item>
+                      <ion-checkbox> Collard greens </ion-checkbox>
+                    </ion-item>
+                    <ion-item>
+                      <ion-checkbox> Kale </ion-checkbox>
+                    </ion-item>
+                    <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+                    </ion-card>
+
+                    <ion-card>
+                      <img alt="beverages" src="assets/beverage.jpg" />
+                      <ion-card-header>
+                        <ion-card-title>Beverages</ion-card-title>
+                      </ion-card-header>
+                    
+                      <ion-card-content>
+                        You need to drink fluid during exercise to replace the fluids you lose when you sweat. That way, you'll reduce the risk of heat stress, maintain normal body function, and maintain performance levels.  
+                      </ion-card-content>
+                      <ion-item>
+                        <ion-checkbox> Water </ion-checkbox>
+                      </ion-item>
+                      <ion-item>
+                        <ion-checkbox> Seltzer </ion-checkbox>
+                      </ion-item>
+                      <ion-item>
+                        <ion-checkbox> Diet Soda </ion-checkbox>
+                      </ion-item>
+                      <ion-item>
+                        <ion-checkbox> Tea </ion-checkbox>
+                      </ion-item>
+                      <ion-item>
+                        <ion-checkbox> Coffee </ion-checkbox>
+                      </ion-item>
+                      <ion-item>
+                        <ion-checkbox> Kombucha </ion-checkbox>
+                      </ion-item>
+                      <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+                      </ion-card>
+
+    
+   
+  </ion-content>
+</div>

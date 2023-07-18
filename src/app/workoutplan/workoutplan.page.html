@@ -1,0 +1,113 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan" class="home-active">
+          <ion-icon name="barbell-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition">
+          <ion-icon name="nutrition-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Choose your workout plan</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content overflow-scroll="true">
+    <ion-card>
+      <img alt="bulking" src="assets/bulking.jpeg" />
+      <ion-card-header>
+        <ion-card-title>Bulking</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Bulking is a phase in the bodybuilding cycle that involves consuming excess calories to build muscle
+      </ion-card-content>
+  
+      <ion-button fill="clear" class="signup-button" routerLink="/bulking">View Workouts</ion-button>
+    </ion-card>
+
+    <ion-card>
+      <img alt="cutting" src="assets/cutting.jpg" />
+      <ion-card-header>
+        <ion-card-title>Cutting</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Cutting is intentionally eating fewer calories than you burn in order to lose mass, particularly fat. The goal is to maintain as much muscle mass as possible
+      </ion-card-content>
+  
+      <ion-button fill="clear" class="signup-button" routerLink="/cutting">View Workouts</ion-button>
+    </ion-card>
+
+    <ion-card>
+      <img alt="weightloss" src="assets/weightloss.png" />
+      <ion-card-header>
+        <ion-card-title>Weight loss</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Ready to shed stubborn pounds? Here’s a look at some of the best cardio and strength-training exercises for weight loss, along with tips to be active throughout the day.  
+      </ion-card-content>
+  
+      <ion-button fill="clear" class="signup-button" routerLink="/weightloss">View Workouts</ion-button>
+    </ion-card>
+   
+  </ion-content>
+</div>

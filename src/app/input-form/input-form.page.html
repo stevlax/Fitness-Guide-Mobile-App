@@ -1,0 +1,101 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form"  class="home-active">
+          <ion-icon name="body-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan">
+          <ion-icon name="barbell-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition">
+          <ion-icon name="nutrition-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Body Track</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="content" fullscreen>
+    <div class="container">
+      <ion-card>
+      <ion-item>
+        <ion-label position="floating">Weight (kg)</ion-label>
+        <ion-input [(ngModel)]="weight" type="number" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Height (cm)</ion-label>
+        <ion-input [(ngModel)]="height" type="number" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Age</ion-label>
+        <ion-input [(ngModel)]="age" type="number" required></ion-input>
+      </ion-item>
+  
+      <ion-button class="calculate-button" color="warning" expand="full" shape="round" (click)="calculateBMI()">
+        Calculate
+      </ion-button>
+  
+      <div class="result-container" *ngIf="bmi !== 0">
+        <h3 class="result-label">BMI: {{ bmi.toFixed(1) }}</h3>
+        <h4 class="recommendation-label">Recommendation: {{ recommendation }}</h4>
+      </div>
+      </ion-card>
+    </div>
+  </ion-content>
+</div>

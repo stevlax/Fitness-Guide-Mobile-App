@@ -1,0 +1,286 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan" class="home-active">
+          <ion-icon name="barbell-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition">
+          <ion-icon name="nutrition-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Weight Loss Workouts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-breadcrumbs>
+    <ion-breadcrumb routerLink="/workoutplan">Choose your workout plan</ion-breadcrumb>
+    <ion-breadcrumb routerLink="/weightloss">Weight Loss</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <ion-content overflow-scroll="true">
+    <ion-card>
+      <img alt="inclinepushup" src="assets/inclinepushup.gif" />
+      <ion-card-header>
+        <ion-card-title>Incline Push-Ups</ion-card-title>
+      </ion-card-header>
+    
+      <ion-accordion-group class="categories">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>BEGINNER</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">2 sets, 12 reps
+            <ion-button size="small" fill="clear" color="dark" slot="end">
+              <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-accordion>
+        <ion-accordion value="second">
+          <ion-item slot="header" color="light">
+            <ion-label>INTERMEDIATE</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">4 sets, 15 reps
+            <ion-button size="small" fill="clear" color="dark" slot="end">
+              <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-accordion>
+        <ion-accordion value="third">
+          <ion-item slot="header" color="light">
+            <ion-label>ADVANCED</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">5 sets, 20 reps
+            <ion-button size="small" fill="clear" color="dark" slot="end">
+              <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+
+      </ion-card>
+
+      <ion-card>
+        <img alt="airsquat" src="assets/airsquat.gif" />
+        <ion-card-header>
+          <ion-card-title>Air Squats</ion-card-title>
+        </ion-card-header>
+      
+        <ion-accordion-group class="categories">
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label>BEGINNER</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">2 sets, 12 reps
+              <ion-button size="small" fill="clear" color="dark" slot="end">
+                <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-accordion>
+          <ion-accordion value="second">
+            <ion-item slot="header" color="light">
+              <ion-label>INTERMEDIATE</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">4 sets, 15 reps
+              <ion-button size="small" fill="clear" color="dark" slot="end">
+                <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-accordion>
+          <ion-accordion value="third">
+            <ion-item slot="header" color="light">
+              <ion-label>ADVANCED</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">5 sets, 20 reps
+              <ion-button size="small" fill="clear" color="dark" slot="end">
+                <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+  
+        </ion-card>
+
+        <ion-card>
+          <img alt="forearmplank" src="assets/forearmplank.gif" />
+          <ion-card-header>
+            <ion-card-title>Forearm Plank</ion-card-title>
+          </ion-card-header>
+        
+          <ion-accordion-group class="categories">
+            <ion-accordion value="first">
+              <ion-item slot="header" color="light">
+                <ion-label>BEGINNER</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">30 secs
+                <ion-button size="small" fill="clear" color="dark" slot="end">
+                  <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                </ion-button>
+              </div>
+            </ion-accordion>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="light">
+                <ion-label>INTERMEDIATE</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">40 secs
+                <ion-button size="small" fill="clear" color="dark" slot="end">
+                  <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                </ion-button>
+              </div>
+            </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="light">
+                <ion-label>ADVANCED</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">50 secs
+                <ion-button size="small" fill="clear" color="dark" slot="end">
+                  <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                </ion-button>
+              </div>
+            </ion-accordion>
+          </ion-accordion-group>
+    
+          </ion-card>
+
+          <ion-card>
+            <img alt="reverselunge" src="assets/reverselunge.gif" />
+            <ion-card-header>
+              <ion-card-title>Reverse Lunge</ion-card-title>
+            </ion-card-header>
+          
+            <ion-accordion-group class="categories">
+              <ion-accordion value="first">
+                <ion-item slot="header" color="light">
+                  <ion-label>BEGINNER</ion-label>
+                </ion-item>
+                <div class="ion-padding" slot="content">2 sets, 12 reps
+                  <ion-button size="small" fill="clear" color="dark" slot="end">
+                    <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                  </ion-button>
+                </div>
+              </ion-accordion>
+              <ion-accordion value="second">
+                <ion-item slot="header" color="light">
+                  <ion-label>INTERMEDIATE</ion-label>
+                </ion-item>
+                <div class="ion-padding" slot="content">4 sets, 15 reps
+                  <ion-button size="small" fill="clear" color="dark" slot="end">
+                    <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                  </ion-button>
+                </div>
+              </ion-accordion>
+              <ion-accordion value="third">
+                <ion-item slot="header" color="light">
+                  <ion-label>ADVANCED</ion-label>
+                </ion-item>
+                <div class="ion-padding" slot="content">5 sets, 20 reps
+                  <ion-button size="small" fill="clear" color="dark" slot="end">
+                    <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                  </ion-button>
+                </div>
+              </ion-accordion>
+            </ion-accordion-group>
+      
+            </ion-card>
+
+            <ion-card>
+              <img alt="bentoverdumbellrow" src="assets/bentoverdumbellrow.gif" />
+              <ion-card-header>
+                <ion-card-title>Bent Over Dumbell Rows</ion-card-title>
+              </ion-card-header>
+            
+              <ion-accordion-group class="categories">
+                <ion-accordion value="first">
+                  <ion-item slot="header" color="light">
+                    <ion-label>BEGINNER</ion-label>
+                  </ion-item>
+                  <div class="ion-padding" slot="content">2 sets, 12 reps
+                    <ion-button size="small" fill="clear" color="dark" slot="end">
+                      <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                    </ion-button>
+                  </div>
+                </ion-accordion>
+                <ion-accordion value="second">
+                  <ion-item slot="header" color="light">
+                    <ion-label>INTERMEDIATE</ion-label>
+                  </ion-item>
+                  <div class="ion-padding" slot="content">4 sets, 15 reps
+                    <ion-button size="small" fill="clear" color="dark" slot="end">
+                      <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                    </ion-button>
+                  </div>
+                </ion-accordion>
+                <ion-accordion value="third">
+                  <ion-item slot="header" color="light">
+                    <ion-label>ADVANCED</ion-label>
+                  </ion-item>
+                  <div class="ion-padding" slot="content">5 sets, 20 reps
+                    <ion-button size="small" fill="clear" color="dark" slot="end">
+                      <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+                    </ion-button>
+                  </div>
+                </ion-accordion>
+              </ion-accordion-group>
+        
+              </ion-card>
+
+    
+   
+  </ion-content>
+</div>

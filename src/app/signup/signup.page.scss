@@ -1,0 +1,77 @@
+ion-content {
+    --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("/assets/gym2.jpg") no-repeat center center / cover;
+}
+
+.sign-up {
+    height: 83vh;
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
+
+    .back-password {
+        color: #7b7b7b;
+        float: left;
+        position: fixed;
+    }
+
+    .heading {
+        padding-top: 5px;
+        h1 {
+            margin-top: 50px;
+            margin-left: 10px;
+            font-size: 1.5rem;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+        }
+        p {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 1rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #7b7b7b;
+        }
+    }
+
+    .login-form{
+        .form-input{
+            position: relative;
+            ion-item:part(native) {
+                padding-left: 0;
+            }
+
+            ion-label{
+                position: absolute;
+                margin-left: 35px;
+                font-weight: bolder;
+                font-size: 0.8rem;
+                top: 3px;
+            }
+
+            ion-input{
+                font-size: 0.9rem;
+                --padding-start: 36px;
+                --padding-top: 36px;
+                color: #7b7b7b;
+            }
+        }
+    }
+
+    .action-buttons{
+        text-align: center;
+        
+        .confirm-button{
+            --background: #3fa748;
+            height: 40px;
+            width: 100%;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+}

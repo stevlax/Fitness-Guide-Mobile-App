@@ -1,0 +1,153 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan">
+          <ion-icon name="barbell-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer" class="home-active">
+          <ion-icon name="stopwatch-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition">
+          <ion-icon name="nutrition-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Workout Timer</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content overflow-scroll="true">
+  
+    <div class="timer-container">
+      <ion-item>
+        <ion-label>Work Duration:</ion-label>
+        <ion-input [(ngModel)]="workDuration" type="number" placeholder="Duration"></ion-input>
+        <ion-select [(ngModel)]="workDurationUnit">
+          <ion-select-option value="seconds">Seconds</ion-select-option>
+          <ion-select-option value="minutes">Minutes</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Number of Sets:</ion-label>
+        <ion-input [(ngModel)]="numSets" type="number" placeholder="Sets"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Rest Time:</ion-label>
+        <ion-input [(ngModel)]="restTime" type="number" placeholder="Rest Time"></ion-input>
+        <ion-select [(ngModel)]="restTimeUnit">
+          <ion-select-option value="seconds">Seconds</ion-select-option>
+          <ion-select-option value="minutes">Minutes</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Preset Name:</ion-label>
+        <ion-input [(ngModel)]="presetName" type="text" placeholder="Name"></ion-input>
+      </ion-item>
+  
+      <div class="timer-buttons">
+        <ion-button expand="full" (click)="startTimer()" [disabled]="isTimerRunning" color="success">
+          <ion-icon name="play"></ion-icon>
+        </ion-button>
+        <ion-button expand="full" (click)="pauseTimer()" [disabled]="!isTimerRunning" color="success">
+          <ion-icon name="pause"></ion-icon>
+        </ion-button>
+        <ion-button expand="full" (click)="resetTimer()" color="warning">
+          <ion-icon name="refresh"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+  
+    <div class="timer-info" *ngIf="isTimerRunning">
+      <ion-item>
+        <ion-label class="timer-info-label">Current Set:</ion-label>
+        <ion-input [(ngModel)]="currentSet"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label class="timer-info-label">Time Remaining:</ion-label>
+        <ion-input [(ngModel)]="timeRemaining"></ion-input>
+      </ion-item>
+    </div>
+  
+    <div class="preset-container">
+      <ion-card *ngFor="let preset of presets">
+        <ion-card-header>
+          <ion-card-title>{{ preset.presetName }}</ion-card-title>
+        </ion-card-header>
+  
+        <ion-card-content>
+          <p>Work Duration: {{ preset.workDuration }} {{ preset.workDurationUnit }}</p>
+          <p>Number of Sets: {{ preset.numSets }}</p>
+          <p>Rest Time: {{ preset.restTime }} {{ preset.restTimeUnit }}</p>
+        </ion-card-content>
+  
+        <ion-item>
+          <ion-button slot="end" color="success">
+            <ion-icon slot="icon-only" name="play"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-card>
+    </div>
+  
+    <ion-button class="preset-button" expand="full" (click)="savePreset()">
+      Save Preset
+    </ion-button>
+
+  </ion-content>
+</div>

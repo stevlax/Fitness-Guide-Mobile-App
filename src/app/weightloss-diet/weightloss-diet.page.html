@@ -1,0 +1,164 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan">
+          <ion-icon name="barbell-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition" class="home-active">
+          <ion-icon name="nutrition-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Nutrition Guide</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-breadcrumbs>
+    <ion-breadcrumb routerLink="/nutrition">Choose workout</ion-breadcrumb>
+    <ion-breadcrumb routerLink="/weightloss-diet">Weight Loss Diet</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <ion-content overflow-scroll="true">
+    <ion-card>
+      <img alt="lowcarbdiet" src="assets/lowcarbdiet.png" />
+      <ion-card-header>
+        <ion-card-title>Low Carb Diet</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        A low-carb diet is one that restricts carbohydrates, primarily found in sugary foods, pasta, and bread. Instead of eating carbs, you eat whole foods including natural proteins, fats, and vegetables
+      </ion-card-content>
+
+      <ion-item>
+        <ion-checkbox> Meat </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Fish </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Eggs </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Non-starchy vegetables </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Lower carb fruits </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Nuts and Seeds </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> High fat dairy </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Fats and oils </ion-checkbox>
+      </ion-item>
+      <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+      </ion-card>
+
+      <ion-card>
+        <img alt="1500calorie" src="assets/1500calorie.jpg" />
+        <ion-card-header>
+          <ion-card-title>1,500-calorie diet</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          The 1,500-calorie diet is where a person limits their caloric intake to 1,500 calories. By eating a 1,500-calorie meal plan and exercising regularly, people can create a calorie deficit, leading to weight loss.  
+        </ion-card-content>
+        <ion-item>
+          <ion-checkbox> Non-starchy vegetables </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Fruits </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Starchy vegetables </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Fish and shellfish </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Eggs </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Poultry and meat </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Whole grains </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Legumes </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Healthy fats </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Dairy products </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Seeds and nuts </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Non-calorie beverages </ion-checkbox>
+        </ion-item>
+        <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+        </ion-card>
+    
+  </ion-content>
+</div>

@@ -1,0 +1,97 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile"  class="home-active">
+          <ion-icon name="person-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan">
+          <ion-icon name="barbell-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition">
+          <ion-icon name="nutrition-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content overflow-scroll="true">
+    <ion-img src="assets/ambatukam.jpg" class="pfp"></ion-img>
+    <div class="change-pfp">
+      <a href="profile.page.html">Change Profile Picture</a>
+    </div>
+    <ion-label>Batu Khan</ion-label>
+
+    <ion-card>
+      <div class="profile-form">
+      <ion-item>
+        <ion-input label="CHANGE USERNAME" labelPlacement="stacked" placeholder="Batu Khan"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input label="CHANGE PASSWORD" type="password" labelPlacement="stacked" placeholder="Enter new password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="CONFIRM PASSWORD" type="password" labelPlacement="stacked" placeholder="Enter new password"></ion-input>
+      </ion-item>
+    </div>
+    </ion-card>
+    <ion-button shape="round" class="profile-save">Save Changes</ion-button>
+
+</ion-content>
+</div>

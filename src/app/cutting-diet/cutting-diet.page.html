@@ -1,0 +1,190 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan">
+          <ion-icon name="barbell-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition" class="home-active">
+          <ion-icon name="nutrition-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Nutrition Guide</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-breadcrumbs>
+    <ion-breadcrumb routerLink="/nutrition">Choose workout</ion-breadcrumb>
+    <ion-breadcrumb routerLink="/cutting-diet">Cutting Diet</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <ion-content overflow-scroll="true">
+    <ion-card>
+      <img alt="meats" src="assets/meats.jpg" />
+      <ion-card-header>
+        <ion-card-title>Meats</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Meats such as chicken, pork, lamb and beef are all rich in protein. Red meat provides us with iron, zinc and B vitamins. Meat is one of the main sources of vitamin B12 in the diet.
+      </ion-card-content>
+
+      <ion-item>
+        <ion-checkbox> Chicken </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Grassfed beef </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Salmon </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Pork </ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox> Lamb </ion-checkbox>
+      </ion-item>
+      <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+      </ion-card>
+
+      <ion-card>
+        <img alt="healthyfats" src="assets/healthyfats.jpeg" />
+        <ion-card-header>
+          <ion-card-title>Healthy Fats</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          A robust body of research has revealed the wide-ranging benefits of including healthy fats in the diet. These include lowering the risk of developing heart disease, improving blood cholesterol levels, helping with blood sugar control and reducing inflammation
+        </ion-card-content>
+        <ion-item>
+          <ion-checkbox> Olive Oil </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Avocado </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Nuts </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Olives </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Beans </ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox> Seeds </ion-checkbox>
+        </ion-item>
+        <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+        </ion-card>
+
+        <ion-card>
+          <img alt="proteinpowder" src="assets/proteinpowder.png" />
+          <ion-card-header>
+            <ion-card-title>Protein Powders</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Protein powder is an easy way to get more protein daily. You can blend it into a shake or smoothie, sprinkle it into your oatmeal or add it to baked goods like bread or muffins.  
+          </ion-card-content>
+          <ion-item>
+            <ion-checkbox> Whey </ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox> Hemp </ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox> Rice </ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox> Peas </ion-checkbox>
+          </ion-item>
+          <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+          </ion-card>
+
+          <ion-card>
+            <img alt="wholegrains" src="assets/wholegrains.jpg" />
+            <ion-card-header>
+              <ion-card-title>Whole Grains</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Eating whole instead of refined grains substantially lowers total cholesterol, low-density lipoprotein (LDL, or bad) cholesterol, triglycerides, and insulin levels  
+            </ion-card-content>
+            <ion-item>
+              <ion-checkbox> Oats </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> Quinoa </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> Pasta </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> Bread </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox> Brown Rice </ion-checkbox>
+            </ion-item>
+            <ion-button shape="round" class="profile-save" size="small">Pin Selections</ion-button>
+            </ion-card>
+
+  
+   
+  </ion-content>
+</div>

@@ -1,0 +1,129 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Built Different</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/home" class="home-active">
+          <ion-icon name="home-outline" slot="start" class="active-icon"></ion-icon>
+          <ion-label class="active-label">Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/profile">
+          <ion-icon name="person-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Your Profile</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      
+      <ion-menu-toggle>
+        <ion-item routerLink="/input-form">
+          <ion-icon name="body-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Body Track</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/workoutplan">
+          <ion-icon name="barbell-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Plan</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/timer">
+          <ion-icon name="stopwatch-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Workout Timer</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/nutrition">
+          <ion-icon name="nutrition-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Nutrition Guide</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" slot="start" class="menu-icons"></ion-icon>
+          <ion-label class="menu-labels">Sign Out</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content overflow-scroll="true">
+
+    <ion-card>
+      <ion-icon name="fitness-outline" size="large" color="success"></ion-icon>
+      <ion-card-header class="card-header" lines="inset">
+        <ion-card-title>Your Workout Progress</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+      <ion-checkbox labelPlacement="end">Pull ups (ADVANCED)</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Chest Dips (ADVANCED)</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Barbell Squats (ADVANCED)</ion-checkbox>
+      </ion-card-content>
+
+      <ion-button fill="clear" class="signup-button">Done Workout</ion-button>
+      <ion-button fill="clear" class="signup-button" routerLink="/workoutplan">Add More Workouts</ion-button>
+    </ion-card>
+
+    <ion-card>
+      <ion-icon name="restaurant-outline" size="large" color="success"></ion-icon>
+      <ion-card-header class="card-header" lines="inset">
+        <ion-card-title>Your Diet Plan</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+      <ion-checkbox labelPlacement="end">Chicken</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Nuts</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Chickpeas</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Oats</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Apple</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Broccoli</ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <ion-checkbox labelPlacement="end">Water</ion-checkbox>
+      </ion-card-content>
+
+      <ion-button fill="clear" class="signup-button">Remove Meal</ion-button>
+      <ion-button fill="clear" class="signup-button" routerLink="/nutrition">Add More Meals</ion-button>
+    </ion-card>
+
+
+  
+  </ion-content>
+</div>
